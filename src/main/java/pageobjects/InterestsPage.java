@@ -32,14 +32,11 @@ public class InterestsPage extends Form {
     public void selectRequiredRandomCheckBox() {
         List<ICheckBox> numbers = new ArrayList<>();
         numbers = this.getListOfCheckBoxes();
-        System.out.println( numbers.size());
         numbers.remove(17);
-        System.out.println(numbers.size());
         numbers.remove(19);
-        System.out.println(numbers.size());
         Set<ICheckBox> sourceListAsSet = new HashSet<>();
         for (int i = 0; sourceListAsSet.size() < 3; i++) {
-            sourceListAsSet.add(numbers.get(random.nextInt(this.getListOfCheckBoxes().size()-1)));
+            sourceListAsSet.add(numbers.get(random.nextInt(this.getListOfCheckBoxes().size() - 1)));
         }
         for (ICheckBox iCheckBox : sourceListAsSet) {
             iCheckBox.check();
