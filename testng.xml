@@ -1,7 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1" verbose="1" >
-    <parameter name="BROWSER" value="${BROWSER}"/>
         <test name="Nopackage" >
         <classes>
             <class name="UITests" />
